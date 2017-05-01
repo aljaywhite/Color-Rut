@@ -36,7 +36,7 @@ function clickDot() {
     var dotBckColor = $(this).css('background-color');
     var dotColor = $(this).children().css('color');
       $('#dot-desc').show();
-      $('#dot-desc').html('background-color: ' + dotBckColor + '<br/>' + ' color: ' + dotColor + '.');
+      $('#dot-desc').html('background-color: ' + dotBckColor + '<br/>' + ' color: ' + dotColor + '');
   });
 }
 
@@ -49,7 +49,7 @@ $("#btn-color-change").click(function() {
   this.innerHTML = "MORE!!!";
   getAlphabet();
   $(".message, .title").hide();
-  $("#back-color").html("Current (page) background-color: " + $("body").css("background-color") + ".");
+  $("#back-color").html("Current (page) background-color: " + $("body").css("background-color") + "");
   $("#back-color").show();
   clickDot();
   });
@@ -60,7 +60,7 @@ $("#btn-color-change").click(function() {
 //Hides welcome message
 $( "#btn-back-change" ).on( "click", function() {
   $( "body" ).css( "background-color", getRGB() );
-  $("#back-color").html("Current (page) background-color: " + $("body").css("background-color") + ".");
+  $("#back-color").html("Current (page) background-color: " + $("body").css("background-color") + "");
   $(".message, .title").hide();
   $("#back-color").show();
 });
@@ -70,7 +70,7 @@ $( "#btn-back-change" ).on( "click", function() {
 $("#btn-clear").click(function(){
   colorDots.innerHTML = "";
   $("body").css("background-color", "rgb(255, 255, 255)");
-  $("#back-color").html("Current (page) background-color: " + $("body").css("background-color") + ".");
+  $("#back-color").html("Current (page) background-color: " + $("body").css("background-color") + "");
   $(".message, .title").show();
   $("#back-color, .dot-desc").hide();
   $("#btn-color-change").html("BEGIN");

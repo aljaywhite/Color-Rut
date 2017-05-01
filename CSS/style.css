@@ -37,8 +37,9 @@ button:focus {outline:0;}
 .crnt-bck-color {
   width: 100%;
   text-align: center;
-  font-size: .9em;
+  font-size: .85em;
   margin: 5px auto;
+  padding-right: 10px;
   display: inline-block;
   color: #fff;
 }
