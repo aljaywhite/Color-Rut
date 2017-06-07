@@ -75,3 +75,20 @@ button:focus {outline:0;}
 .color-dot:focus {
   box-shadow: inset 0 0 1em white, 0 0 1em white;
 }
+
+.footer {
+    /*position: fixed;*/
+    margin-top: 40px;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+  btn .btn-outline-success {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
